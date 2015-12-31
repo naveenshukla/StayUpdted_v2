@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- <SearchView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:id="@+id/searchView"
+         android:layout_alignParentTop="true"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentRight="true"
+         android:layout_alignParentStart="true"
+         android:layout_alignParentEnd="true"
+         android:inputType="text" />-->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#fe0000"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <SearchView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchView"
+        android:queryHint="@string/searchHint"
+        android:layout_below="@+id/my_toolbar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:padding="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/textviewname"
+        android:layout_below="@+id/searchView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:padding="10dp"
+        android:textSize="15dp"
+        android:textColor="#000000" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" "
+        android:id="@+id/viewphonenumber"
+        android:layout_below="@+id/textviewname"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:padding="10dp"
+        android:textSize="15dp"
+        android:textColor="#000000" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/viewaddress"
+        android:layout_below="@+id/viewphonenumber"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:padding="10dp"
+        android:textSize="15dp"
+        android:textColor="#000000" />
+
+
+</RelativeLayout>

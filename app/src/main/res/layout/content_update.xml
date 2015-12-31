@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rlayout1"
+        android:background="@color/accent_material_dark"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Enter Present Number : "
+        android:id="@+id/present"
+        android:padding="15dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/old"
+        android:layout_below="@+id/present"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+
+    <TextView
+        android:padding="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Enter New Number : "
+        android:id="@+id/up"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/old"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/newNum"
+        android:layout_below="@+id/up" />
+
+    <Button
+        android:layout_margin="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:id="@+id/updateButton"
+        android:layout_below="@id/newNum"
+        android:layout_centerHorizontal="true"
+        android:padding="20dp"
+        android:onClick="updat"/>
+</RelativeLayout>
